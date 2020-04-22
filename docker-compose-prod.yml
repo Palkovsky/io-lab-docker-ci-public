@@ -1,4 +1,3 @@
-
 version: '3.0'
 services:
   web:
@@ -6,7 +5,7 @@ services:
     image: palkovsky/io-lab-docker-ci-public
     ports:
       - "80:5000"
-    depends_n:
+    depends_on:
       - "redis"
     environment:
       REDIS_HOST: redis
